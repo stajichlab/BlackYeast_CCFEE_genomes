@@ -37,7 +37,7 @@ SEED_SPECIES=anidulans
 GENOMEFILE=$(realpath $GENOMEFOLDER/${NAME}.${EXT})
 LINEAGE=$(realpath $LINEAGE)
 mkdir -p $OUTDIR
-if [ -d "$OUTFOLDER/run_${NAME}" ];  then
+if [ -d "$OUTFOLDER/run_${NAME}_shovill" ];  then
     echo "Already have run $NAME in folder busco - do you need to delete it to rerun?"
     exit
 else

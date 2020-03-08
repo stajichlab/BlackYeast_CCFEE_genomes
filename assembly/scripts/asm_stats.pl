@@ -78,7 +78,7 @@ foreach my $file ( readdir(DIR) ) {
 	    } elsif( $read_dir && /^mapped:\s+(\S+)\s+(\d+)\s+(\S+)\s+(\d+)/) {
 		$base_count += $4;
 		$stats{$stem}->{'Mapped_reads'} += $2;
-	    }  elsif( /^Reads:\s+(\S+)/) {
+	    }  elsif( /^Reads(?:\s+Used):\s+(\S+)/) {
 		$stats{$stem}->{'Reads'} = $1;
 	    }
 	    

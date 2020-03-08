@@ -24,7 +24,7 @@ ASM=genomes
 TMPDIR=/scratch/$USER
 MINLEN=500
 
-mkdir -p $ASM
+mkdir -p $ASM $TMPDIR
 
 if [ -z $CPU ]; then
     CPU=1

@@ -42,7 +42,7 @@ if [ -d "$OUTFOLDER/run_${NAME}" ];  then
     exit
 else
     pushd $OUTFOLDER
-    run_BUSCO.py -i $GENOMEFILE -l $LINEAGE -o $NAME -m geno --cpu $CPU --tmp $TEMP --long -sp $SEED_SPECIES
+    run_BUSCO.py -i $GENOMEFILE -l $LINEAGE -o $NAME -m geno --cpu $CPU --tmp $TEMP -sp $SEED_SPECIES
     popd
 fi
 
